@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partie 3 | Exercice</title>
+  </head>
+  <body>
+    <script>
+      function identifier() {
+        do {
+          var login = prompt("entre votre login");
+          if (login == null) return;
+        } while (login != "@ChaimaeMazzouz");
+        var nbreTry = 0;
+        do {
+          nbreTry++;
+          var password = prompt("entre votre password :");
+          if (nbreTry > 3) {
+            alert("Erreur!!");
+            return;
+          }
+        } while (password != "password123");
+        var prenom = prompt("entrer votre nom");
+        if (prenom == "Chaimae") {
+          document.write("login : " + login + "<BR>");
+          document.write("Password : " + password + "<BR>");
+          document.write("Prénom : " + prenom + "<BR>");
+        }
+      }
+      identifier();
+    </script>
+  </body>
+</html>
