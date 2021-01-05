@@ -22,7 +22,7 @@
           }
         } while (password != "password123");
         var prenom = prompt("entrer votre nom");
-        if (prenom == "Chaimae") {
+        if (confirm("donc, votre nom est " + prenom)) {
           document.write("login : " + login + "<BR>");
           document.write("Password : " + password + "<BR>");
           document.write("Prénom : " + prenom + "<BR>");
